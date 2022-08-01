@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-font: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #000000;
+  padding: 11.5rem 16rem;
+  text-align: center;
+  max-width: 125rem;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.8rem;
+}
+
+header svg.logo {
+  min-width: 18.7rem;
+  margin-right: 0.8rem;
+}
+
+header .search {
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+header input {
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  height: 4.8rem;
+  width: 46rem;
+  border: none;
+  border-radius: 5px;
+  background: #06181C;
+  color: #7C7C8A;
+  margin-right: 0.8rem;
+  padding-left: 1rem;
+}
+
+
+
+header button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 4.8rem;
+  width: 17rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #065E7C;
+}
+
+header button:hover {
+  background: #FFFFFF;
+  color: #065E7C;
+
+  cursor: pointer;
+}
+
+header button svg {
+  margin-right: 0.8rem;
+}
+
+header button:hover svg path {
+  fill: #065E7C;
+  cursor: pointer;
+}
+
+div .tableBorder {
+  width: 100%;
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;
+  min-width: 85rem;
+  margin-top: 8.7rem;
+  overflow-y: hidden;
+}
+
+.table-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: overlay;
+  max-height: 59rem;
+}
+
+.table-content::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.table-content::-webkit-scrollbar-track {
+  border-radius: 0.3rem;
+  background: transparent;
+}
+
+.table-content::-webkit-scrollbar-thumb {
+  background: #4A808C;
+  border-radius: 0.3rem;  
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  border-collapse: collapse;
+  max-height: 59rem;
+}
+
+table * {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 160%;
+  color: #E1E1E6;
+  text-decoration: none;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+table thead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.4rem;
+  width: 100%;
+  background: #092D38;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 160%;
+}
+
+table thead th {
+  border: none;
+  padding: 0 4rem;
+}
+
+table tbody tr {
+  height: 10.4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(6,22,27,0.5);
+  text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+  background: #06181C;
+  border: 1px solid #4A808C;
+}
+
+table tbody tr td{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+table tbody tr td.user {
+  height: 10.4rem;
+  min-width: 29rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1.6rem;
+}
+
+table tbody tr td.user span {
+  font-weight: normal;
+}
+
+table tbody tr td.user img {
+  height: 5.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+table tbody tr td .remove {
+  color: #F75A68; 
+  height: fit-content;
+  background: none;
+  border: none;
+}
+
+table tbody tr td .remove:hover {
+  cursor: pointer;
+}
+
+table tbody tr:last-child td.user {
+  border-bottom-right-radius: 1.2rem;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rem;
+  gap: 6rem;
+  background: #030B0D;
+  width: 100%;
+}
+
+.empty p {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  color: #4E5455;
+}
